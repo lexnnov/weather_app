@@ -1,0 +1,14 @@
+client/node_modules/
+client/build/
+
+server/node_modules/
+server/build/
+
+production/
+
+build/
+*.log
+.git
+.idea/
+*.log
+

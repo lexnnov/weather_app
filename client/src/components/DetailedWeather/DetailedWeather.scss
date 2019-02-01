@@ -1,0 +1,35 @@
+.more_weather {
+  position: absolute;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+
+  &_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-left: 110px;
+    font-family: Archivo, sans-serif;
+
+    &_service {
+      display: flex;
+      align-items: center;
+    }
+
+    &_service h5 {
+      margin: 0;
+    }
+  }
+
+  &_container img {
+    margin-right: 5px;
+
+  }
+}
+
+.more_weather_active {
+  bottom: 200px;
+}

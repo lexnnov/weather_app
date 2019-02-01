@@ -1,0 +1,18 @@
+.weatherHeader {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 0 40px;
+
+  &_service {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &_service h5 {
+    margin: 0;
+    padding-left: 4px;
+  }
+}
