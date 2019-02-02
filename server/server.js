@@ -4,7 +4,6 @@ import path from 'path';
 import mountRouter from './routes/index';
 
 const app = express();
-const logger = log4js.getLogger();
 
 log4js.configure({
   disableClustering: true,
@@ -28,12 +27,5 @@ log4js.configure({
 mountRouter(app);
 
 app.use(express.static(path.join(__dirname, './client/')));
-// respond with "hello world" when a GET request is made to the homepage
-app.get('/',  (req, res) => {
-  res.sendFile(path.join(__dirname, './client/index.html'));
-  logger.info('hello world');
-//   res.send(yandex);
-});
-
 
 app.listen(3008, 'localhost');

@@ -11,6 +11,5 @@ module.exports = {
       "import/no-cycle:": 'off',
       "consistent-return": "off",
       "one-var": ["off", "always"]
-
     }
 };

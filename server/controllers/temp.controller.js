@@ -2,6 +2,7 @@ import request from 'request-promise';
 import cheerio from 'cheerio';
 import log4js from 'log4js';
 import Url from '../constants/urls';
+import path from 'path';
 
 const logger = log4js.getLogger();
 
@@ -45,7 +46,6 @@ const parseWeather = (req, res) => {
     });
     night.each(function () {
       temp.yahoo_night_temp.push(Math.floor((($(this).text().replace('°', '')) - 32) * 5 / 9));
-      console.log(temp.yahoo_night_temp);
     });
   });
 
@@ -73,6 +73,12 @@ const parseWeather = (req, res) => {
   });
 };
 
+const sendClient = (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/index.html'));
+};
+
+
 export default {
   parseWeather,
+  sendClient
 };

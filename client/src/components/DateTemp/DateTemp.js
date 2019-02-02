@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import './Date1.scss'
+import './DateTemp.scss'
 
-class Date1 extends Component {
+class DateTemp extends Component {
   render() {
     const date = new Date();
     date.setDate(date.getDate() + this.props.weekDay );
@@ -26,4 +26,4 @@ class Date1 extends Component {
   }
 }
 
-export default Date1;
+export default DateTemp;

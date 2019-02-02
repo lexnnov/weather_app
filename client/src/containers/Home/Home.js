@@ -5,7 +5,7 @@ import { ClipLoader } from 'react-spinners';
 import 'animate.css';
 import axios from 'axios';
 import { getTemp, animate } from '../../store/actions';
-import Date1 from '../../components/Date/Date1';
+import DateTemp from '../../components/DateTemp/DateTemp';
 import IconWeather from '../../components/IconWeather/IconWeather';
 import AverTemp from '../../components/AverTemp/AverTemp';
 import DetailedWeather from '../../components/DetailedWeather/DetailedWeather';
@@ -56,7 +56,7 @@ class Home extends Component {
         {this.props.temp.yandex_day.slice(0, 7).map((item, i) => (
           <div key={i} onClick={this.toggle(i)} style={this.animateDelay(i)} className={`${this.weekEnd(i)}`}>
 
-            <Date1 weekDay={i}/>
+            <DateTemp weekDay={i}/>
 
             <IconWeather icon={this.props.temp.yandex_icon[i].join('')}
                          active={this.props.temp.animatearr[i]}/>
