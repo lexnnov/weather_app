@@ -1,15 +1,18 @@
-.day{
+.dayDate{
   padding: 10px;
-}
 
-.dayMonth {
-  font-family: 'Archivo',sans-serif;
-  /* font-weight: 100; */
-  font-size: 14px;
-}
+  &_container {
 
-.dayWeek {
-  font-family: 'Actor', sans-serif;
-  font-size: 16px;
-  font-weight: bold;
+    &_dayWeek{
+      font-family: 'Actor', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    &_day{
+      font-family: 'Archivo',sans-serif;
+      font-size: 14px;
+    }
+
+  }
 }

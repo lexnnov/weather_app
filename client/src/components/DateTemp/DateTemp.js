@@ -12,15 +12,11 @@ class DateTemp extends Component {
     const myMonts = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
     return (
-
-      <div className="day">
-
-        <div className="date">
-          <p
-            className="dayWeek">{this.props.weekDay === 0 ? 'Today' : this.props.weekDay === 1 ? 'Tomorrow' : myDays[weekDay]} </p>
-          <p className="dayMonth">{myMonts[month]}, {day}</p>
+      <div className="dayDate">
+        <div className="dayDate_container">
+          <p className="dayDate_container_dayWeek">{this.props.weekDay === 0 ? 'Today' : this.props.weekDay === 1 ? 'Tomorrow' : myDays[weekDay]} </p>
+          <p className="dayDate_container_day">{myMonts[month]}, {day}</p>
         </div>
-
       </div>
     );
   }
